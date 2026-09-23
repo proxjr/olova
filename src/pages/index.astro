@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+
+const title = 'Olova — Software for a simpler life';
+const description = 'Thoughtful software, automation, and AI for the everyday. Olova is coming soon.';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f2ea" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" aria-label="Site header">
+        <a class="wordmark" href="/" aria-label="Olova home"><span class="logo-icon" aria-hidden="true"><span></span></span>olova<span class="wordmark-period">.</span></a>
+        <span class="header-right"><span class="availability-dot"></span> IN THE WORKS</span>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span>01 / A MORE THOUGHTFUL WAY</span></p>
+            <h1 id="hero-title">Make room for<br /><em>what matters.</em></h1>
+            <p class="intro">We build useful software and automations that take the friction out of everyday life and work.</p>
+            <span class="coming-soon">Something good is coming soon <span aria-hidden="true">↗</span></span>
+          </div>
+          <div class="visual" aria-hidden="true">
+            <div class="visual-grid"></div>
+            <div class="shape shape-back"></div><div class="shape shape-mid"></div><div class="shape shape-front"></div>
+            <div class="visual-card"><span class="card-symbol">✳</span><span>Less busywork.<br />More possibility.</span><span class="card-arrow">↗</span></div>
+            <span class="visual-coordinate">O — 01 / 2026</span>
+          </div>
+        </section>
+        <section class="bottom-strip" aria-label="Our focus"><div><span class="strip-label">OUR NORTH STAR</span><p>Small problems. <strong>Meaningful impact.</strong></p></div><span class="strip-detail">SOFTWARE · AUTOMATION · AI</span></section>
+      </main>
+      <footer><span>© {new Date().getFullYear()} Olova</span><span>Built for better everyday living.</span></footer>
+    </div>
+  </body>
+</html>
